@@ -17,6 +17,6 @@ public class PLayerKeyboard : MonoBehaviour
     void Update()
     {
         transform.Rotate(0, 0, -Input.GetAxisRaw("Horizontal") * rotationSpeed * Time.deltaTime);
-        transform.Translate(0, Input.GetAxisRaw("Vertical") * rotationSpeed * Time.deltaTime, 0);
+        transform.Translate(0, Input.GetAxisRaw("Vertical") * 50 * Time.deltaTime, 0);
     }
 }
