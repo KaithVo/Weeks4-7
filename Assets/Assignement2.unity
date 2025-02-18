@@ -475,8 +475,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2006318198}
         m_TargetAssemblyTypeName: ButtonMove, Assembly-CSharp
-        m_MethodName: moveLeft
-        m_Mode: 1
+        m_MethodName: GoLeft
+        m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -846,8 +846,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2006318198}
         m_TargetAssemblyTypeName: ButtonMove, Assembly-CSharp
-        m_MethodName: moveRight
-        m_Mode: 1
+        m_MethodName: GoRight
+        m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1125,9 +1125,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  newspaper: {fileID: 0}
-  left: 0
-  right: 0
 --- !u!1 &2059057282
 GameObject:
   m_ObjectHideFlags: 0
