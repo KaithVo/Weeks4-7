@@ -17,13 +17,17 @@ public class ZoomInOut : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        t = 0;
+        if (zoomSlider = null)// zoom s
+        {
+            t = zoomSlider.value;
+        }
     }
 
     // Update is called once per frame
-    void Update()
+    public void sliderZoom(float value)
     {
-        t += Slider;
+        
+        t= value;
   
         transform.localScale = Vector2.one * curve.Evaluate(t);
   
