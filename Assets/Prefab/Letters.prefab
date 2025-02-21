@@ -16,7 +16,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &7077197429859715202
 Transform:
@@ -73,8 +73,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
+  m_SortingOrder: 10
+  m_Sprite: {fileID: 21300000, guid: 4cf81c3e47ffc450184e7f7575efbda8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -97,46 +97,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e7294b7b034842a7a9d4c37e2fdf79e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 407946436686306076}
+  sprites:
+  - {fileID: 21300000, guid: 4cf81c3e47ffc450184e7f7575efbda8, type: 3}
+  - {fileID: 21300000, guid: 9d5727e15261049d9b502069e8ac3c04, type: 3}
+  - {fileID: 21300000, guid: 61265a07e87b64cef824fc2510636219, type: 3}
+  - {fileID: 21300000, guid: d497025449ffe4e95a37296c3bc00c1b, type: 3}
+  - {fileID: 21300000, guid: b8fff74a8ede14f7191a27df6f5af81f, type: 3}
+  - {fileID: 21300000, guid: fa78fed1c154a40d081acd3ebb29b464, type: 3}
+  - {fileID: 21300000, guid: 3b1bebcf5416444a1b5732a04b71e976, type: 3}
+  - {fileID: 21300000, guid: 44de90e6f00e74a2f8f1a33fb97f7b6e, type: 3}
   curve:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: -0.0020942688
-      value: 0.7264099
-      inSlope: 2
-      outSlope: 2
+      time: 0
+      value: 0
+      inSlope: 1.0093827
+      outSlope: 1.0093827
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
-      outWeight: 0
+      outWeight: 0.08059218
     - serializedVersion: 3
-      time: 0.1930246
-      value: 0.7236421
-      inSlope: -2.7910912
-      outSlope: -2.7910912
+      time: 1.98349
+      value: 0.70796776
+      inSlope: -0.16665365
+      outSlope: -0.16665365
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.22177704
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.41926903
-      value: 0.58166206
-      inSlope: 1.8323524
-      outSlope: 1.8323524
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.98114014
-      value: 0.37029266
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
+      inWeight: 0.37235287
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  t: 0
+  t: 0.142
