@@ -17,7 +17,7 @@ public class ZoomInOut : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (zoomSlider != null)// zoom slider 
+        if (zoomSlider != null)// zoom slider //!= null so that it wont go crazy if it cant find zoomslider?
         {
             t = zoomSlider.value;
         }

@@ -1,10 +1,10 @@
-using System.Collections;
+ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class ButtonMove : MonoBehaviour
 {
-    public float speed = 2f;
+    public float speed = 1f;
    // public Transform newspaper; 
 
     //private bool left = false; 
@@ -14,17 +14,18 @@ public class ButtonMove : MonoBehaviour
     {
 Vector3 pos = transform.position;
    pos.x += speed * Time.deltaTime;
-
+       
     Vector2 screenPos = Camera.main.WorldToScreenPoint (pos);
-    if (screenPos.x<0)
+        //The object poucess back when reaching the other side
+    if (screenPos.x<180)
    {
-       Vector3 fixedPos = new Vector3(0, 0, 0);
+       Vector3 fixedPos = new Vector3(180, 0, 0);
       pos.x = Camera.main.ScreenToWorldPoint(fixedPos).x;
        speed = speed * -1;
      }
-     if (screenPos.x > Screen.width)
+     if (screenPos.x > 450)
        {
-        Vector3 fixedPos = new Vector3(Screen.width, 0, 0);
+        Vector3 fixedPos = new Vector3(450, 0, 0);
        pos.x = Camera.main.ScreenToWorldPoint(fixedPos).x;
         speed = speed * -1;
     }
