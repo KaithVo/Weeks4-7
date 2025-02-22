@@ -17,9 +17,9 @@ Vector3 pos = transform.position;
        
     Vector2 screenPos = Camera.main.WorldToScreenPoint (pos);
         //The object poucess back when reaching the other side
-    if (screenPos.x<180)
+    if (screenPos.x<250)
    {
-       Vector3 fixedPos = new Vector3(180, 0, 0);
+       Vector3 fixedPos = new Vector3(250, 0, 0);
       pos.x = Camera.main.ScreenToWorldPoint(fixedPos).x;
        speed = speed * -1;
      }
